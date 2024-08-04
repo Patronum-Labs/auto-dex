@@ -1,21 +1,21 @@
 {
-  "name": "@patronumlabs/ens-registrars",
+  "name": "@patronumlabs/auto-swapV3",
   "version": "0.1.0",
-  "description": "Template of different registrars used to assign subnames with different logic",
+  "description": "Router contract that swap fungible tokens on receive using Uniswap V3",
   "author": "PatronumLabs YamenMerhi",
   "license": "MIT",
   "keywords": [
-    "ens",
-    "registrars",
-    "subnodes"
+    "uniswap",
+    "uniswap router",
+    "uniswap v3"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Patronum-Labs/ens-registrars.git"
+    "url": "git+https://github.com/Patronum-Labs/auto-swapV3.git"
   },
-  "homepage": "https://github.com/Patronum-Labs/ens-registrars#readme",
+  "homepage": "https://github.com/Patronum-Labs/auto-swapV3#readme",
   "bugs": {
-    "url": "https://github.com/Patronum-Labs/ens-registrars/issues"
+    "url": "https://github.com/Patronum-Labs/auto-swapV3/issues"
   },
   "scripts": {
     "build": "forge build",
