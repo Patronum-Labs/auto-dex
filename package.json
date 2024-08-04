@@ -1,0 +1,33 @@
+{
+  "name": "@patronumlabs/ens-registrars",
+  "version": "0.1.0",
+  "description": "Template of different registrars used to assign subnames with different logic",
+  "author": "PatronumLabs YamenMerhi",
+  "license": "MIT",
+  "keywords": [
+    "ens",
+    "registrars",
+    "subnodes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patronum-Labs/ens-registrars.git"
+  },
+  "homepage": "https://github.com/Patronum-Labs/ens-registrars#readme",
+  "bugs": {
+    "url": "https://github.com/Patronum-Labs/ens-registrars/issues"
+  },
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "snapshot": "forge snapshot",
+    "prettier:check": "npx prettier -c \"**/*.{md,sol,js,json,yml,yaml}\"",
+    "prettier:fix": "npx prettier -w \"**/*.{md,sol,js,json,yml,yaml}\"",
+    "solhint": "npx solhint \"**/*.sol\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-solidity": "^1.3.1",
+    "solhint": "^5.0.3"
+  }
+}

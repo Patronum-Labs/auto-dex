@@ -1,0 +1,7 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "func-visibility": ["warn", { "ignoreConstructors": true }],
+    "one-contract-per-file": "off"
+  }
+}

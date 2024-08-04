@@ -1,0 +1,6 @@
+pnpm-lock.yaml
+.github/workflows/*.yml
+lib
+node_modules
+out
+cache
