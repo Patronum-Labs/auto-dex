@@ -1,0 +1,3 @@
+@lukso/=lib/lsp-smart-contracts/packages/
+@openzeppelin/=lib/openzeppelin-contracts/
+@erc725/smart-contracts/=lib/ERC725/implementations/
