@@ -14,14 +14,6 @@ The AutoSwapV3 contract is specifically designed to work with LSP7-DigitalAsset 
 - Works with LSP7-DigitalAsset tokens
 - Works with UniversalSwapsV3
 
-## Setup
-
-This contract needs to be set as the **UniversalReceiverDelegate** for a Universal Profile and should be given the necessary permissions to execute from this profile. In the case of ownership via **LSP6-KeyManager**, it should be given **SUPER_CALL** and **REENTRANCY** permissions.
-
-## Oracle Integration
-
-The AutoSwapV3 contract should include an oracle that feeds the minimum amount of tokens that the user is willing to receive. This amount should be reasonable based on a preferred deviation to protect against sandwich attacks.
-
 ## Flow Diagram
 
 The following diagram illustrates the flow of a token transfer and automatic swap:
@@ -54,6 +46,14 @@ sequenceDiagram
 5. The Universal Profile calls authorizeOperator on the token contract
 6. The token contract authorize the UniversalRouter and the authorization data contain the logic for the swap
 7. The swap result is returned through the chain of contracts back to AutoSwapV3 and the UniversalProfile
+
+## Setup
+
+This contract needs to be set as the **UniversalReceiverDelegate** for a Universal Profile and should be given the necessary permissions to execute from this profile. In the case of ownership via **LSP6-KeyManager**, it should be given **SUPER_CALL** and **REENTRANCY** permissions.
+
+## Oracle Integration
+
+The AutoSwapV3 contract should include an oracle that feeds the minimum amount of tokens that the user is willing to receive. This amount should be reasonable based on a preferred deviation to protect against sandwich attacks.
 
 ## Usage
 
